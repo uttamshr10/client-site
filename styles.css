@@ -50,12 +50,15 @@ nav ul li{
 }
 
 nav ul li a {
-    color: var(--text-color);
     font-size: 20px;
+    position: relative;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .logo {
+    position: relative;
+    right: 100px;
     color: var(--secondary-color);
 }
 
@@ -63,15 +66,26 @@ nav ul li a {
     border-radius: 50%;
     max-width: 30%;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5%;
+    margin: 40px auto 20px auto;
 }
 
 .content {
     text-align: center;
 }
 
-.content h1{ 
-    margin: 5px;
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0px;
+    height: 3px;
+    background: var(--secondary-color);
+    transition: 0.5s;
 }
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
