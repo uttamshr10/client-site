@@ -88,6 +88,93 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+/* About Me Section */
+
+#about ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#about li{
+    margin-bottom: 5px;
+}
+
+#about li::before {
+    content: "-";
+    margin-right: 5px;
+}
+
+
+.main-title{
+    font-size:60px;
+    text-align: center;
+}
+
+#about, #academics {
+    margin-bottom: 40px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.detail{
+    flex-basis: 55%;
+    font-size: 20px;
+}
+
+.detail p{
+    text-align: justify;
+}
+
+.experience, .interest{
+    flex-basis: 40%;
+    font-size: 20px;
+}
+
+
+
+/* Academics */
+
+ol li{
+    list-style: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;        
+    padding-bottom: 40px;
+}
+
+.academics{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:60px 0;
+}
+
+
+
+.item{
+    font-size: 25px;
+    margin-bottom:10px;
+}
+
+
+
+
+.year, .institution, .major {
+    padding: 50px 0;
+    flex-basis: 30%;
+}
+
+.year {
+    text-align: center;
+}
+
 
 /* Contact Section */
 .contact-one{
