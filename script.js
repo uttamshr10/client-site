@@ -58,3 +58,13 @@ thirdListItem.addEventListener("mouseout", function(){
         item.classList.remove("hover");
     });
 });
+
+// Adding open and close menu in small screen size
+var navmenu = document.getElementById('menu');
+function opennav(){
+    navmenu.style.right = "0";
+}
+
+function closenav(){
+    navmenu.style.right="-200px";
+}
