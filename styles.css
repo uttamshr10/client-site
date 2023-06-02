@@ -141,6 +141,7 @@ nav ul li a:hover::after {
 
 ol li{
     list-style: none;
+    cursor: pointer;
 }
 
 .title {
@@ -163,8 +164,11 @@ ol li{
     margin-bottom:10px;
 }
 
-
-
+/* Hover effects */
+  
+.ordered-list li:first-child.hover, .ordered-list li:nth-child(even).hover, .ordered-list li:last-child.hover{
+    color: var(--secondary-color);
+}
 
 .year, .institution, .major {
     padding: 50px 0;
