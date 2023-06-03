@@ -265,35 +265,14 @@ form .btn{
 
 
 /* Media Queries */
-
-@media screen and (min-width: 1200px){
-    
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px){
-    
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px){
-    .admin-image{
-        max-width:30%;
-        border-radius: 50%
-    }
-
-    .year, .institution{
-        flex-basis: 45%;
-    }
-
-    .major{
-        flex-basis: 100%;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 767px){
+@media only screen and (max-width: 600px){
     nav .fas{
         display: block;
         font-size: 25px;
+    }
+
+    nav li{
+        color: green;
     }
 
     nav ul{
@@ -321,8 +300,8 @@ form .btn{
     }
 
     .admin-image{
-        max-width:50%;
-        border-radius: 50%
+        border-radius: 50%;
+        max-width: 100%;
     }
     
     .detail, .experience, .interest, .year, .institution, .major, .contact-one, .contact-two{
@@ -338,10 +317,16 @@ form .btn{
     }
 
     .main-title{
-        font-size: 45px;
+        font-size: 50px;
     }
-    
-    .contact-me{
-        font-size: 35px;
+
+    .container img, .container.content{
+        margin-top: 60px;
+    }
+    .logo{
+        font-size:30px;
+    }
+    .content{
+        font-size: 20px;
     }
 }
